@@ -1,0 +1,15 @@
+{
+  "name": "slack_weatherbot",
+  "version": "1.0.0",
+  "description": "Slackbot that reports weather of given city",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Stacy Suen",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "slackbots": "^1.2.0"
+  }
+}
