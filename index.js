@@ -10,7 +10,7 @@ const bot = new SlackBot({
 bot.on('start', () => {
   bot.postMessage(
     'general', 
-    'Type \'@Weather Bot\' followed by the name of a city to get weather conditions.'
+    'Welcome to Weather Bot! Type \'@Weather Bot\' followed by the name of a city to get weather conditions.'
   );
   botId = bot.self.id;
 });
@@ -52,7 +52,7 @@ function handleMessage(city, channel) {
 
     if (description.includes('clear sky')) {
       emoji = ':sunny: :sunglasses:';
-      weatherNote = ':beach_with_umbrella: Looks like a flip flops kind of day :beach_with_umbrella:';
+      weatherNote = ':sunglasses: Be prepared with your sunglasses! :sunglasses:';
     } else if (description.includes('few clouds')) {
       emoji = ':sun_behind_cloud:';
       weatherNote = ':cloud: It might be a bit chilly! :cloud:';
