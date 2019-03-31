@@ -32,6 +32,7 @@ A slack weather bot that reports the weather of a city of choice using the [Open
     - Can be improved by making messages more descriptive after more familiarity/research of weather conditions (ex. humidity, pressure, wind, etc) at different places.
 - Deployed using Heroku 
     - Can be faster with more dinos!
+- Initially, I tried out [Dialogflow](https://dialogflow.com/docs/integrations/slack) to check out if natural language could be used to train the bot. This process covered more than what the basic weather bot intended.
 
 ## License
 This project is licensed under the MIT License.
@@ -39,4 +40,5 @@ This project is licensed under the MIT License.
 ## Acknowledgements and Resources
 - [Build a Slackbot](https://www.youtube.com/watch?v=nyyXTIL3Hkw): Useful youtube video to help get me started
 - [Learn How to Build Slack Bot Node.js](https://sabe.io/tutorials/learn-how-to-build-slack-bot-node-js): Blog with more details using node.js
+- [Deploying Slack Bots to Heroku](https://blog.heroku.com/how-to-deploy-your-slack-bots-to-heroku#publish-notifications-to-slack)
 
