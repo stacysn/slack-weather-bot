@@ -15,9 +15,17 @@ A slack weather bot that reports the weather of a city of choice using the [Open
 ### To run bot locally
 
 1. Clone this repository. 
-2. Install dependencies: `npm install`
-3. Start running bot: `npm start`
-4. Type in **@Weather Bot (CITY-NAME)** into a Slack channel with the city of choice.
+2. Create your own openweatherAPI_Key by creating a free account at [openweatherma](https://openweathermap.org/).
+3. Create your [Slack API Key](https://api.slack.com/apps).
+4. Add in your new keys to your `.bash_profile` in your terminal.
+    ```
+        export SLACK_TOKEN='xoxb************';
+        export OpenWeather_API_Key='644***********';
+
+    ```
+5. Install dependencies: `npm install`
+6. Start running bot: `npm start`
+7. Type in **@Weather Bot (CITY-NAME)** into a Slack channel with the city of choice.
 
 ### Built With:
 - [Node.js](https://nodejs.org/en/)
@@ -33,6 +41,9 @@ A slack weather bot that reports the weather of a city of choice using the [Open
 - Deployed using Heroku 
     - Can be faster with more dinos!
 - Initially, I tried out [Dialogflow](https://dialogflow.com/docs/integrations/slack) to check out if natural language could be used to train the bot. This process covered more than what the basic weather bot intended.
+- Configuration of secret tokens was something that needed to be thought out more.
+    - Can look for ways to improve so users wouldn't have to create new tokens
+    - Useful link from [Heroku](https://devcenter.heroku.com/articles/config-vars#accessing-config-var-values-from-code)
 
 ## License
 This project is licensed under the MIT License.
