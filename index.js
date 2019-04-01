@@ -1,9 +1,10 @@
 const SlackBot = require('slackbots');
 const axios = require('axios');
-let config = require('./config.js')
+
+let OpenWeather_API_Key = process.env.OpenWeather_API_Key;
 
 const bot = new SlackBot({
-  token: config.SLACK_TOKEN,
+  token: process.env.SLACK_TOKEN,
   name: 'weatherbot'
 });
 
@@ -42,7 +43,7 @@ bot.on('message', (data) => {
 
 // response to data
 function handleMessage(city, channel) {
-  axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${config.OpenWeather_API_Key}`).then(res => {
+  axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${OpenWeather_API_Key}`).then(res => {
     const highTemp = Math.round((res.data.main.temp_max - 273.15) * (9/5) + 32);
     const lowTemp = Math.round((res.data.main.temp_min - 273.15) * (9/5) + 32);
     const description = res.data.weather[0].description;
