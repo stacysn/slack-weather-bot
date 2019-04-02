@@ -29,6 +29,7 @@ A slack weather bot that reports the weather of a city of choice using the [Open
 
 ### Built With:
 - [Node.js](https://nodejs.org/en/)
+- [Express](https://www.npmjs.com/package/express)
 - [Axios](https://github.com/axios/axios): Promise based HTTP client for the browser and node.js
 - [Slackbots](https://www.npmjs.com/package/slackbots)
 
@@ -39,7 +40,6 @@ A slack weather bot that reports the weather of a city of choice using the [Open
 - Bot looks for key words in description of weather, such as `cloudy`, to determine emojis and messages to send back to user
     - Can be improved by making messages more descriptive after more familiarity/research of weather conditions (ex. humidity, pressure, wind, etc) at different places.
 - Deployed using Heroku 
-    - Can be faster with more dinos!
 - Initially, I tried out [Dialogflow](https://dialogflow.com/docs/integrations/slack) to check out if natural language could be used to train the bot. This process covered more than what the basic weather bot intended.
 - Configuration of secret tokens was something that needed to be thought out more.
     - Can look for ways to improve so users wouldn't have to create new tokens
@@ -52,4 +52,5 @@ This project is licensed under the MIT License.
 - [Build a Slackbot](https://www.youtube.com/watch?v=nyyXTIL3Hkw): Useful youtube video to help get me started
 - [Learn How to Build Slack Bot Node.js](https://sabe.io/tutorials/learn-how-to-build-slack-bot-node-js): Blog with more details using node.js
 - [Deploying Slack Bots to Heroku](https://blog.heroku.com/how-to-deploy-your-slack-bots-to-heroku#publish-notifications-to-slack)
+- [Resolving crashes](https://help.heroku.com/P1AVPANS/why-is-my-node-js-app-crashing-with-an-r10-error)
 
