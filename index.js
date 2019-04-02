@@ -1,5 +1,17 @@
 const SlackBot = require('slackbots');
 const axios = require('axios');
+const express = require('express');
+const bodyParser = require('body-parser');
+
+// initialize bot
+const app = express();
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+// start server
+const server = app.listen(process.env.PORT || 3000, () => {
+  console.log('Server is listening on port %d in %s mode', server.address().port, app.settings.env);
+});
 
 let OpenWeather_API_Key = process.env.OpenWeather_API_Key;
 
