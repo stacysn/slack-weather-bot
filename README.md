@@ -44,7 +44,7 @@ A slack weather bot that reports the weather of a city of choice using the [Open
 - Configuration of secret tokens was something that needed to be thought out more.
     - Can look for ways to improve so users wouldn't have to create new tokens
     - Useful link from [Heroku](https://devcenter.heroku.com/articles/config-vars#accessing-config-var-values-from-code)
-
+    - [Storing API keys](https://medium.freecodecamp.org/how-to-securely-store-api-keys-4ff3ea19ebda)
 ## License
 This project is licensed under the MIT License.
 
@@ -53,4 +53,4 @@ This project is licensed under the MIT License.
 - [Learn How to Build Slack Bot Node.js](https://sabe.io/tutorials/learn-how-to-build-slack-bot-node-js): Blog with more details using node.js
 - [Deploying Slack Bots to Heroku](https://blog.heroku.com/how-to-deploy-your-slack-bots-to-heroku#publish-notifications-to-slack)
 - [Resolving crashes](https://help.heroku.com/P1AVPANS/why-is-my-node-js-app-crashing-with-an-r10-error)
-
+- [How to build a SlackBot](https://medium.com/@alexstroulger/how-to-build-a-slackbot-600635b12a38)

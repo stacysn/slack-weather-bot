@@ -21,13 +21,13 @@ const bot = new SlackBot({
 });
 
 // Start Handler
-bot.on('start', () => {
-  bot.postMessage(
-    'general', 
-    'Welcome to Weather Bot! Type \'@Weather Bot\' followed by the name of a city to get weather conditions.'
-  );
-  botId = bot.self.id;
-});
+// bot.on('start', () => {
+//   bot.postMessage(
+//     'general', 
+//     'Welcome to Weather Bot! Type \'@Weather Bot\' followed by the name of a city to get weather conditions.'
+//   );
+//   botId = bot.self.id;
+// });
 
 // Error handler
 bot.on('error', (err) => console.log('ERROR', err));
@@ -45,7 +45,7 @@ bot.on('message', (data) => {
   }
   let message = data.text;
   let channel = data.channel;
-
+  
   if (data.text.includes('help')) {
     askForHelp(channel);
     return;
